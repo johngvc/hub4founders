@@ -124,6 +124,7 @@ GEM
       net-imap
       net-pop
       net-smtp
+    mailtrap (2.0.0)
     marcel (1.0.4)
     mini_mime (1.1.5)
     minitest (5.23.1)
@@ -269,6 +270,7 @@ DEPENDENCIES
   factory_bot (~> 6.4)
   importmap-rails
   jbuilder
+  mailtrap (~> 2.0)
   pg (~> 1.5)
   psql (~> 0.0.1)
   puma (>= 5.0)

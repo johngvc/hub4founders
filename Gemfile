@@ -69,3 +69,5 @@ gem 'psql', '~> 0.0.1'
 
 
 
+
+gem "mailtrap", "~> 2.0"

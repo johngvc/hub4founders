@@ -41,6 +41,11 @@ Rails.application.configure do
 
   config.action_mailer.perform_caching = false
 
+  config.action_mailer.delivery_method = :mailtrap
+  config.action_mailer.mailtrap_settings = {
+    api_key: ENV.fetch("MAILTRAP_API_KEY")
+  }
+
   # Print deprecation notices to the Rails logger.
   config.active_support.deprecation = :log
 
