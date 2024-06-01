@@ -19,6 +19,7 @@ default: &default
   # https://guides.rubyonrails.org/configuring.html#database-pooling
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
 
+
 development:
   <<: *default
   database: hub4founders_development
@@ -79,6 +80,4 @@ test:
 #
 production:
   <<: *default
-  database: hub4founders_production
-  username: hub4founders
-  password: <%= ENV["HUB4FOUNDERS_DATABASE_PASSWORD"] %>
+  url: <%= ENV['DATABASE_URL'] %>
