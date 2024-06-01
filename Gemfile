@@ -71,3 +71,5 @@ gem 'psql', '~> 0.0.1'
 
 
 gem "mailtrap", "~> 2.0"
+
+gem "annotate", "~> 3.2"
