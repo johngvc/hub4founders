@@ -2,8 +2,6 @@ source 'https://rubygems.org'
 
 ruby '3.3.2'
 
-gem 'dotenv'
-# Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 gem 'rails', '~> 7.1.3'
 
 # The original asset pipeline for Rails [https://github.com/rails/sprockets-rails]
@@ -47,7 +45,12 @@ gem 'bootsnap', require: false
 
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
+  gem 'dotenv'
   gem 'debug', platforms: %i[mri windows]
+  gem "factory_bot", "~> 6.4"
+  gem "rspec-rails", "~> 6.1"
+  gem "database_cleaner-active_record", "~> 2.1"
+  gem "shoulda-matchers", "~> 6.2"
 end
 
 group :development do
@@ -62,3 +65,7 @@ group :development do
 end
 
 gem 'psql', '~> 0.0.1'
+
+
+
+
