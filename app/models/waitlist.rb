@@ -8,5 +8,5 @@
 #  updated_at :datetime         not null
 #
 class Waitlist < ApplicationRecord
-  # validate email format and presence
+  validates :email, presence: true, email: true
 end
