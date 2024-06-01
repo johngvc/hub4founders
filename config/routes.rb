@@ -9,4 +9,11 @@ Rails.application.routes.draw do
   # root "posts#index"
 
   resources :waitlists, only: [:create]
+  
+  resources :pages, only: [] do
+    collection do
+      get :landing
+      get :waitlist
+    end
+  end
 end
