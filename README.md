@@ -22,3 +22,12 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
+
+
+To start the application:
+
+* guarantee the .env is populated correctly
+    * example .env for dev on project
+* docker compose build
+* docker compose run --rm web bin/rails db:setup
+* docker compose up
